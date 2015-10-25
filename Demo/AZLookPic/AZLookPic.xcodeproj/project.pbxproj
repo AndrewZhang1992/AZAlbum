@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		494FA7631BDBE8700074E92D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA7621BDBE8700074E92D /* main.m */; };
+		494FA7661BDBE8700074E92D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA7651BDBE8700074E92D /* AppDelegate.m */; };
+		494FA7691BDBE8700074E92D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA7681BDBE8700074E92D /* ViewController.m */; };
+		494FA76C1BDBE8700074E92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494FA76A1BDBE8700074E92D /* Main.storyboard */; };
+		494FA76E1BDBE8700074E92D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494FA76D1BDBE8700074E92D /* Images.xcassets */; };
+		494FA7711BDBE8700074E92D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494FA76F1BDBE8700074E92D /* LaunchScreen.xib */; };
+		494FA77D1BDBE8700074E92D /* AZLookPicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA77C1BDBE8700074E92D /* AZLookPicTests.m */; };
+		494FA78C1BDBE99F0074E92D /* AZAlbumVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA7881BDBE99F0074E92D /* AZAlbumVC.m */; };
+		494FA78D1BDBE99F0074E92D /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA78B1BDBE99F0074E92D /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
+		494FA7911BDBEA320074E92D /* AZAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA7901BDBEA320074E92D /* AZAlbumCell.m */; };
+		494FA7961BDBED640074E92D /* AlbumAddBtnHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494FA7931BDBED640074E92D /* AlbumAddBtnHL@2x.png */; };
+		494FA7971BDBED640074E92D /* AZ_Album_chose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494FA7941BDBED640074E92D /* AZ_Album_chose@2x.png */; };
+		494FA7981BDBED640074E92D /* AZ_Album_not_chose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 494FA7951BDBED640074E92D /* AZ_Album_not_chose@2x.png */; };
+		494FA79B1BDBF2E70074E92D /* AZLookAlbumPicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA79A1BDBF2E70074E92D /* AZLookAlbumPicVC.m */; };
+		494FA79E1BDBF35E0074E92D /* AZLookAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FA79D1BDBF35E0074E92D /* AZLookAlbumCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		494FA7771BDBE8700074E92D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 494FA7551BDBE8700074E92D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 494FA75C1BDBE8700074E92D;
+			remoteInfo = AZLookPic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		494FA75D1BDBE8700074E92D /* AZLookPic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AZLookPic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		494FA7611BDBE8700074E92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494FA7621BDBE8700074E92D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		494FA7641BDBE8700074E92D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		494FA7651BDBE8700074E92D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		494FA7671BDBE8700074E92D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		494FA7681BDBE8700074E92D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		494FA76B1BDBE8700074E92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		494FA76D1BDBE8700074E92D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		494FA7701BDBE8700074E92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		494FA7761BDBE8700074E92D /* AZLookPicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AZLookPicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		494FA77B1BDBE8700074E92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494FA77C1BDBE8700074E92D /* AZLookPicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AZLookPicTests.m; sourceTree = "<group>"; };
+		494FA7871BDBE99F0074E92D /* AZAlbumVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAlbumVC.h; sourceTree = "<group>"; };
+		494FA7881BDBE99F0074E92D /* AZAlbumVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAlbumVC.m; sourceTree = "<group>"; };
+		494FA78A1BDBE99F0074E92D /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = "<group>"; };
+		494FA78B1BDBE99F0074E92D /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = "<group>"; };
+		494FA78F1BDBEA320074E92D /* AZAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZAlbumCell.h; sourceTree = "<group>"; };
+		494FA7901BDBEA320074E92D /* AZAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZAlbumCell.m; sourceTree = "<group>"; };
+		494FA7931BDBED640074E92D /* AlbumAddBtnHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumAddBtnHL@2x.png"; sourceTree = "<group>"; };
+		494FA7941BDBED640074E92D /* AZ_Album_chose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AZ_Album_chose@2x.png"; sourceTree = "<group>"; };
+		494FA7951BDBED640074E92D /* AZ_Album_not_chose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AZ_Album_not_chose@2x.png"; sourceTree = "<group>"; };
+		494FA7991BDBF2E70074E92D /* AZLookAlbumPicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLookAlbumPicVC.h; sourceTree = "<group>"; };
+		494FA79A1BDBF2E70074E92D /* AZLookAlbumPicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLookAlbumPicVC.m; sourceTree = "<group>"; };
+		494FA79C1BDBF35E0074E92D /* AZLookAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLookAlbumCell.h; sourceTree = "<group>"; };
+		494FA79D1BDBF35E0074E92D /* AZLookAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLookAlbumCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		494FA75A1BDBE8700074E92D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FA7731BDBE8700074E92D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		494FA7541BDBE8700074E92D = {
+			isa = PBXGroup;
+			children = (
+				494FA75F1BDBE8700074E92D /* AZLookPic */,
+				494FA7791BDBE8700074E92D /* AZLookPicTests */,
+				494FA75E1BDBE8700074E92D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		494FA75E1BDBE8700074E92D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				494FA75D1BDBE8700074E92D /* AZLookPic.app */,
+				494FA7761BDBE8700074E92D /* AZLookPicTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		494FA75F1BDBE8700074E92D /* AZLookPic */ = {
+			isa = PBXGroup;
+			children = (
+				494FA7861BDBE8FD0074E92D /* AZAlbum */,
+				494FA7641BDBE8700074E92D /* AppDelegate.h */,
+				494FA7651BDBE8700074E92D /* AppDelegate.m */,
+				494FA7671BDBE8700074E92D /* ViewController.h */,
+				494FA7681BDBE8700074E92D /* ViewController.m */,
+				494FA76A1BDBE8700074E92D /* Main.storyboard */,
+				494FA76D1BDBE8700074E92D /* Images.xcassets */,
+				494FA76F1BDBE8700074E92D /* LaunchScreen.xib */,
+				494FA7601BDBE8700074E92D /* Supporting Files */,
+			);
+			path = AZLookPic;
+			sourceTree = "<group>";
+		};
+		494FA7601BDBE8700074E92D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				494FA7611BDBE8700074E92D /* Info.plist */,
+				494FA7621BDBE8700074E92D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		494FA7791BDBE8700074E92D /* AZLookPicTests */ = {
+			isa = PBXGroup;
+			children = (
+				494FA77C1BDBE8700074E92D /* AZLookPicTests.m */,
+				494FA77A1BDBE8700074E92D /* Supporting Files */,
+			);
+			path = AZLookPicTests;
+			sourceTree = "<group>";
+		};
+		494FA77A1BDBE8700074E92D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				494FA77B1BDBE8700074E92D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		494FA7861BDBE8FD0074E92D /* AZAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				494FA7991BDBF2E70074E92D /* AZLookAlbumPicVC.h */,
+				494FA79A1BDBF2E70074E92D /* AZLookAlbumPicVC.m */,
+				494FA7871BDBE99F0074E92D /* AZAlbumVC.h */,
+				494FA7881BDBE99F0074E92D /* AZAlbumVC.m */,
+				494FA7921BDBED640074E92D /* resource */,
+				494FA78E1BDBEA090074E92D /* view */,
+				494FA7891BDBE99F0074E92D /* Categroy */,
+			);
+			path = AZAlbum;
+			sourceTree = "<group>";
+		};
+		494FA7891BDBE99F0074E92D /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				494FA78A1BDBE99F0074E92D /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				494FA78B1BDBE99F0074E92D /* ALAssetsLibrary+CustomPhotoAlbum.m */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
+		494FA78E1BDBEA090074E92D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				494FA78F1BDBEA320074E92D /* AZAlbumCell.h */,
+				494FA7901BDBEA320074E92D /* AZAlbumCell.m */,
+				494FA79C1BDBF35E0074E92D /* AZLookAlbumCell.h */,
+				494FA79D1BDBF35E0074E92D /* AZLookAlbumCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		494FA7921BDBED640074E92D /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				494FA7931BDBED640074E92D /* AlbumAddBtnHL@2x.png */,
+				494FA7941BDBED640074E92D /* AZ_Album_chose@2x.png */,
+				494FA7951BDBED640074E92D /* AZ_Album_not_chose@2x.png */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		494FA75C1BDBE8700074E92D /* AZLookPic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494FA7801BDBE8700074E92D /* Build configuration list for PBXNativeTarget "AZLookPic" */;
+			buildPhases = (
+				494FA7591BDBE8700074E92D /* Sources */,
+				494FA75A1BDBE8700074E92D /* Frameworks */,
+				494FA75B1BDBE8700074E92D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AZLookPic;
+			productName = AZLookPic;
+			productReference = 494FA75D1BDBE8700074E92D /* AZLookPic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		494FA7751BDBE8700074E92D /* AZLookPicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494FA7831BDBE8700074E92D /* Build configuration list for PBXNativeTarget "AZLookPicTests" */;
+			buildPhases = (
+				494FA7721BDBE8700074E92D /* Sources */,
+				494FA7731BDBE8700074E92D /* Frameworks */,
+				494FA7741BDBE8700074E92D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				494FA7781BDBE8700074E92D /* PBXTargetDependency */,
+			);
+			name = AZLookPicTests;
+			productName = AZLookPicTests;
+			productReference = 494FA7761BDBE8700074E92D /* AZLookPicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		494FA7551BDBE8700074E92D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = AndrewZhang;
+				TargetAttributes = {
+					494FA75C1BDBE8700074E92D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					494FA7751BDBE8700074E92D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 494FA75C1BDBE8700074E92D;
+					};
+				};
+			};
+			buildConfigurationList = 494FA7581BDBE8700074E92D /* Build configuration list for PBXProject "AZLookPic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 494FA7541BDBE8700074E92D;
+			productRefGroup = 494FA75E1BDBE8700074E92D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				494FA75C1BDBE8700074E92D /* AZLookPic */,
+				494FA7751BDBE8700074E92D /* AZLookPicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		494FA75B1BDBE8700074E92D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494FA76C1BDBE8700074E92D /* Main.storyboard in Resources */,
+				494FA7711BDBE8700074E92D /* LaunchScreen.xib in Resources */,
+				494FA7981BDBED640074E92D /* AZ_Album_not_chose@2x.png in Resources */,
+				494FA76E1BDBE8700074E92D /* Images.xcassets in Resources */,
+				494FA7971BDBED640074E92D /* AZ_Album_chose@2x.png in Resources */,
+				494FA7961BDBED640074E92D /* AlbumAddBtnHL@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FA7741BDBE8700074E92D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		494FA7591BDBE8700074E92D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494FA79B1BDBF2E70074E92D /* AZLookAlbumPicVC.m in Sources */,
+				494FA78D1BDBE99F0074E92D /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
+				494FA7691BDBE8700074E92D /* ViewController.m in Sources */,
+				494FA7661BDBE8700074E92D /* AppDelegate.m in Sources */,
+				494FA7631BDBE8700074E92D /* main.m in Sources */,
+				494FA79E1BDBF35E0074E92D /* AZLookAlbumCell.m in Sources */,
+				494FA7911BDBEA320074E92D /* AZAlbumCell.m in Sources */,
+				494FA78C1BDBE99F0074E92D /* AZAlbumVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		494FA7721BDBE8700074E92D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494FA77D1BDBE8700074E92D /* AZLookPicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		494FA7781BDBE8700074E92D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 494FA75C1BDBE8700074E92D /* AZLookPic */;
+			targetProxy = 494FA7771BDBE8700074E92D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		494FA76A1BDBE8700074E92D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				494FA76B1BDBE8700074E92D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		494FA76F1BDBE8700074E92D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				494FA7701BDBE8700074E92D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		494FA77E1BDBE8700074E92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		494FA77F1BDBE8700074E92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		494FA7811BDBE8700074E92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AZLookPic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		494FA7821BDBE8700074E92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AZLookPic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		494FA7841BDBE8700074E92D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AZLookPicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AZLookPic.app/AZLookPic";
+			};
+			name = Debug;
+		};
+		494FA7851BDBE8700074E92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AZLookPicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AZLookPic.app/AZLookPic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		494FA7581BDBE8700074E92D /* Build configuration list for PBXProject "AZLookPic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494FA77E1BDBE8700074E92D /* Debug */,
+				494FA77F1BDBE8700074E92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494FA7801BDBE8700074E92D /* Build configuration list for PBXNativeTarget "AZLookPic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494FA7811BDBE8700074E92D /* Debug */,
+				494FA7821BDBE8700074E92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		494FA7831BDBE8700074E92D /* Build configuration list for PBXNativeTarget "AZLookPicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494FA7841BDBE8700074E92D /* Debug */,
+				494FA7851BDBE8700074E92D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 494FA7551BDBE8700074E92D /* Project object */;
+}
