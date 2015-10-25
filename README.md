@@ -4,8 +4,8 @@
 
 > AZAlbum 是一个相册模块，可以用到ios系统中快速继承，使用相册选择功能。
 
-![](../AZAlbum/pic/113.png)
-![](../AZAlbum/pic/112.png)
+![](https://raw.githubusercontent.com/AndrewZhang1992/AZAlbum/master/pic/113.png)
+![](https://raw.githubusercontent.com/AndrewZhang1992/AZAlbum/master/pic/112.png)
 
 ## 如何加入到你的项目中？
 
