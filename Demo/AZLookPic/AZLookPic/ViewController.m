@@ -132,7 +132,7 @@
         //呼出相册
         AZAlbumVC *albumVC=[AZAlbumVC new];
         albumVC.delegate=self;
-
+        albumVC.navColor=[UIColor colorWithRed:25.0/255 green:166.0/255 blue:230.0/255 alpha:1];
         [self presentViewController:albumVC animated:YES completion:nil];
     }
     

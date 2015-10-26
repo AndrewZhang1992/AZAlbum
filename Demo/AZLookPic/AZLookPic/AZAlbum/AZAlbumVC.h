@@ -33,7 +33,7 @@
 @property (nonatomic,strong)NSMutableArray *choseImageArray;
 
 /** 顶部 nav color 默认为黑色 */
-@property (nonatomic,assign)UIColor *navColor;
+@property (nonatomic,copy)UIColor *navColor;
 
 /** 代理是否返回图片类型 default yes */
 @property (nonatomic,assign)BOOL isBackImage;

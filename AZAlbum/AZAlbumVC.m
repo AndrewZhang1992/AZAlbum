@@ -84,6 +84,7 @@
 {
     UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 64)];
     view.backgroundColor=_navColor?:[UIColor blackColor];
+    
     [self.view addSubview:view];
     
     UIButton *cancelBtn=[UIButton buttonWithType:UIButtonTypeCustom];
