@@ -130,25 +130,34 @@
             NSMutableArray *tempAry=[NSMutableArray array];
             for (int i=0; i<self.choseImageArray.count; i++)
             {
-                NSString *urlStr=self.choseImageArray[i];
-                NSURL *url=[NSURL URLWithString:urlStr];
-                
-                [self.library assetForURL:url resultBlock:^(ALAsset *asset)  {
-                    UIImage *image=[UIImage imageWithCGImage:asset.defaultRepresentation.fullScreenImage];
-                    [tempAry addObject:image];
-                    
+                if ([self.choseImageArray[i] isKindOfClass:[UIImage class]]) {
+                    [tempAry addObject:self.choseImageArray[i]];
                     if (tempAry.count==self.choseImageArray.count) {
                         [self.delegate choseImages:[tempAry copy]];
                     }
+                }else
+                {
                     
-                }failureBlock:^(NSError *error) {
-                    NSLog(@"error=%@",error);
+                    NSString *urlStr=self.choseImageArray[i];
+                    NSURL *url=[NSURL URLWithString:urlStr];
+                    
+                    [self.library assetForURL:url resultBlock:^(ALAsset *asset)  {
+                        UIImage *image=[UIImage imageWithCGImage:asset.defaultRepresentation.fullScreenImage];
+                        [tempAry addObject:image];
+                        
+                        if (tempAry.count==self.choseImageArray.count) {
+                            [self.delegate choseImages:[tempAry copy]];
+                        }
+                        
+                    }failureBlock:^(NSError *error) {
+                        NSLog(@"error=%@",error);
+                    }
+                     ];
+
                 }
-                ];
-             }
+               
+            }
             
-            
-           
         }
         else
         {
@@ -252,7 +261,7 @@
             if (group!=nil) {
                 
                 NSString *g=[NSString stringWithFormat:@"%@",group];//获取相簿的组
-//                AZLOG(@"gg:%@",g);//gg:ALAssetsGroup - Name:Camera Roll, Type:Saved Photos, Assets count:71
+//                NSLog(@"gg:%@",g);//gg:ALAssetsGroup - Name:Camera Roll, Type:Saved Photos, Assets count:71
                 
                 NSString *g1=[g substringFromIndex:16 ] ;
                 NSArray *arr=[[NSArray alloc] init];
@@ -452,12 +461,15 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     //获取选择的照片--UIImagePickerControllerOriginalImage
+
     UIImage *image=info[UIImagePickerControllerOriginalImage];
+    _isBackImage=YES;
     [self.choseImageArray removeAllObjects];
     [self.choseImageArray addObject:image];
     [self dismissViewControllerAnimated:NO completion:^{
         [self sure];
     }];
+   
 }
 //取消相册界面
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

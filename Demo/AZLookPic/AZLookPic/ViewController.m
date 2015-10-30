@@ -94,32 +94,48 @@
         return picCell;
     }
     
+#if 0
     picCell.picImageView.image=self.dataArray[indexPath.row];
-    
-#if 0 
-    
-    // 返回图片路径
-    NSString *urlStr=self.dataArray[indexPath.row];
-    NSURL *url=[NSURL URLWithString:urlStr];
-    
-    [self.library assetForURL:url resultBlock:^(ALAsset *asset)  {
-        UIImage *image=[UIImage imageWithCGImage:asset.thumbnail];
-        
-        /*
-         ALAsset
-         
-         asset.defaultRepresentation.fullScreenImage//图片的大图
-         asset.thumbnail                            //图片的缩略图小图
-         
-         */
-        
-        picCell.picImageView.image=image;
-     
-    }failureBlock:^(NSError *error) {
-        NSLog(@"error=%@",error);
-    }
-     ];
 #endif
+    
+    /**
+         isBackImage=no;
+     */
+#if 1
+    
+    
+    if ([self.dataArray[indexPath.row] isKindOfClass:[UIImage class]]) {
+        //相册拍照照片
+        picCell.picImageView.image=self.dataArray[indexPath.row];
+        
+    }else
+    {
+        // 返回图片路径
+        NSString *urlStr=self.dataArray[indexPath.row];
+        NSURL *url=[NSURL URLWithString:urlStr];
+        
+        [self.library assetForURL:url resultBlock:^(ALAsset *asset)  {
+            UIImage *image=[UIImage imageWithCGImage:asset.thumbnail];
+            
+            /*
+             ALAsset
+             
+             asset.defaultRepresentation.fullScreenImage//图片的大图
+             asset.thumbnail                            //图片的缩略图小图
+             
+             */
+            
+            picCell.picImageView.image=image;
+            
+        }failureBlock:^(NSError *error) {
+            NSLog(@"error=%@",error);
+        }
+         ];
+        
+    }
+    
+#endif
+
     
     return picCell;
     
@@ -132,6 +148,7 @@
         //呼出相册
         AZAlbumVC *albumVC=[AZAlbumVC new];
         albumVC.delegate=self;
+        albumVC.isBackImage=NO;
         albumVC.navColor=[UIColor colorWithRed:25.0/255 green:166.0/255 blue:230.0/255 alpha:1];
         [self presentViewController:albumVC animated:YES completion:nil];
     }

@@ -11,7 +11,7 @@
 @protocol AZAlbumVCDelegate <NSObject>
 
 /**
-    @pararm  images isBackImage 为 yes：存放的image。isBackImage 为 no： 存放的image的url类型,默认返回 image
+    @pararm  images isBackImage 为 yes：存放的image。isBackImage 为 no： 存放的image的url类型,默认返回 image,但是 当点击使用相机时，拍照返回的仍然为image。建议使用默认选项
  
     @discusstion 使用 ALAssetsLibrary 方法：assetForURL resultBlock
 
